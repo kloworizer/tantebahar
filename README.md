@@ -10,7 +10,7 @@ Todolist<br>
 cetak register harian<br>
 ekspor csv untuk imacros<br>
 
-cara install :
+cara install :<br>
 install xampp atau sejenisnya<br>
 copy folder ke htdocs<br>
 buka file database.sql dan jalankan di toad atau phpmyadmin<br>
