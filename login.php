@@ -26,7 +26,6 @@ header("profile.php");
 } else {
 $error = '<script>bootbox.alert({message: "Username atau Password salah",title: "Error"});</script>';
 }
-mysqli_close($connection);
 }
 }
 ?>

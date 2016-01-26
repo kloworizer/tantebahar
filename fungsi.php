@@ -1,6 +1,5 @@
 <?php
-    
-    function formatnpwp($npwp) {
+	function formatnpwp($npwp) {
     $ret = substr($npwp,0,2)
     .substr($npwp,2,3)
     .substr($npwp,5,3)

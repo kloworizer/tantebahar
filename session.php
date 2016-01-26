@@ -7,7 +7,6 @@ $login_nip =$row['nip'];
 $login_seksi =$row['seksi'];
 $login_role = $_SESSION['role'];
 if(!isset($login_session)){
-mysqli_close($connection); // Closing Connection
 header('Location: index.php?menu=home'); // Redirecting To Home Page
 }
 ?>
