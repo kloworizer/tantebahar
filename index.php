@@ -25,6 +25,7 @@ include('fungsi.php');
 		<script src="./js/highcharts.js"></script>
 		<script src="./js/bootstrap-datepicker.min.js"></script>
 		<script src="./js/bootstrap-datepicker.id.min.js"></script>
+		<script src="./js/jquery-barcode.min.js"></script>
 	</head>
 	
 	<body>

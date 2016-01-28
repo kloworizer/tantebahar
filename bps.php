@@ -30,7 +30,12 @@
 
 <html>
 	<head>
-		<title></title>
+		<meta charset="utf-8">
+		<title><?php echo $namaapp; ?></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		
+		<script src="./js/jquery-2.1.3.min.js"></script>
+		<script src="./js/jquery-barcode.min.js"></script>
 		<style>
 		body {
 			font-family: arial;
@@ -316,6 +321,17 @@
 			<tbody>
 				<tr>
 					<td style="width: 120px;">
+						<p>&nbsp;</p>
+					</td>
+					<td style="width: 19px;">
+						<p>&nbsp;</p>
+					</td>
+					<td style="width: 592px;">
+						<p>&nbsp;</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="width: 120px;">
 						<p>Penerima SPT</p>
 					</td>
 					<td style="width: 19px;">
@@ -336,11 +352,36 @@
 						<p><?php echo $nipperekam; ?></p>
 					</td>
 				</tr>
+				<tr>
+					<td style="width: 120px;">
+						<p>&nbsp;</p>
+					</td>
+					<td style="width: 19px;">
+						<p>&nbsp;</p>
+					</td>
+					<td style="width: 592px;">
+						<p>&nbsp;</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="width: 120px;">
+						<p>Barcode</p>
+					</td>
+					<td style="width: 19px;">
+						<p>:</p>
+					</td>
+					<td style="width: 592px;">
+						<p><div id="barcode" align="center"></div></p>
+					</td>
+				</tr>
 			</tbody>
 		</table>
-		<p>&nbsp;</p>
 	</body>
 <script>
+$("#barcode").barcode(
+"<?php echo $nomorbps; ?>",
+"code39"
+);     
 window.onload = function() {
 	window.print();
 	window.close();
