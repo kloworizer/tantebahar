@@ -2,6 +2,7 @@
 include('session.php'); 
 if($login_role == "1"){
 	$npwp = $_POST["npwp"];
+	$namawp = $_POST["namawp"];
 	$tanggalterima = converttgltomysql($_POST["tanggalterima"]);
 	$jenisspt = $_POST["jenisspt"];
 	$tahunpajak = $_POST["tahunpajak"];
@@ -41,9 +42,9 @@ if($login_role == "1"){
 		$insert = mysqli_query($connection,"
 		INSERT INTO 
 		bps 
-		(`id`, `npwp`, `tanggalterima`, `jenisspt`, `tahunpajak`, `statusbayar`, `nominal`, `nominalcurr`, `tanggalbayar`, `reskom`, `pembetulan`, `angsuranps25`, `perekam`, `nomorbps`, `espt`) 
+		(`id`, `npwp`, `namawp`, `tanggalterima`, `jenisspt`, `tahunpajak`, `statusbayar`, `nominal`, `nominalcurr`, `tanggalbayar`, `reskom`, `pembetulan`, `angsuranps25`, `perekam`, `nomorbps`, `espt`) 
 		VALUES 
-		(NULL, '$npwp', '$tanggalterima', '$jenisspt', '$tahunpajak', '$statusbayar', '$nominal', '$nominalcurr', '$tanggalbayar', '$reskom', '$pembetulan', '$angsuranps25', '$perekam', '$nomorbps', '$espt');");
+		(NULL, '$npwp', '$namawp', '$tanggalterima', '$jenisspt', '$tahunpajak', '$statusbayar', '$nominal', '$nominalcurr', '$tanggalbayar', '$reskom', '$pembetulan', '$angsuranps25', '$perekam', '$nomorbps', '$espt');");
 		if($insert){
 			echo '<script>window.open("'.cetak($nomorbps).'", "", "width=800, height=600")</script>';
 			$message =  '<script>

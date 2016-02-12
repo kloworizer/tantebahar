@@ -9,6 +9,11 @@
 		<div class="col-sm-2">
 			<input type="text" class="form-control" name="npwp" id="npwp" maxlength="15" placeholder="__.___.___._-___.___">
 		</div>
+	</div><div class="form-group">
+		<label class="control-label col-sm-2" for="namawp">Nama WP:</label>
+		<div class="col-sm-4">
+			<input type="text" class="form-control" name="namawp" id="namawp">
+		</div>
 	</div>
 	<div class="form-group" id="tanggalterima">
 		<label class="control-label col-sm-2" for="tanggalterima">Tanggal Terima:</label>
@@ -108,13 +113,6 @@
 	<button type="submit" class="btn btn-primary">Simpan</button>
 		</div>
 	</div>
-</div>
-<div class="panel panel-default">
-  <div class="panel-heading">Tips</div>
-  <div class="panel-body">
-  gunakan tombol TAB untuk berpindah ke isian selanjutnya
-  </div>
-</div>
 </div>
 
 <script>

@@ -10,6 +10,7 @@
 	$query=mysqli_query($connection, "select * from bps where id like '$id' limit 1");
 	$row = mysqli_fetch_array($query);
 	$npwp = formatnpwp($row["npwp"]);
+	$namawp = strtoupper($row["namawp"]);
 	$tanggalterima = converttanggal($row["tanggalterima"]);
 	$jenisspt = jenisspt($row["jenisspt"]);
 	$kodespt = kodespt($row["jenisspt"]);
@@ -75,7 +76,7 @@
 						<p>:</p>
 					</td>
 					<td style="width: 216px;">
-						<p>-</p>
+						<p><?php echo $namawp; ?></p>
 					</td>
 					<td style="width: 119px;">
 						<p>NPWP</p>
@@ -234,7 +235,7 @@
 						<p>:</p>
 					</td>
 					<td style="width: 216px;">
-						<p>-</p>
+						<p><?php echo $namawp; ?></p>
 					</td>
 					<td style="width: 119px;">
 						<p>NPWP</p>
