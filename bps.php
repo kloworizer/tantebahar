@@ -213,7 +213,7 @@
 				</tr>
 			</tbody>
 		</table><hr>
-		<p align="center">KANTOR PELAYANAN PAJAK PRATAMA CIKARANG SELATAN</p>
+		<p align="center"><?php echo strtoupper($kantor); ?></p>
 		<table border="1" cellpadding="0" cellspacing="0" align="center">
 			<tbody>
 				<tr>
