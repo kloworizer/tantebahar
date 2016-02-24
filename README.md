@@ -1,14 +1,15 @@
 # tantebahar
 tanda terima bps kahar
 
+versi 0.4 - tambah kolom npwp di tanda terima, cetak register harian<br>
 versi 0.3 - tambah barcode, perbaikan bug<br>
 versi 0.2 - perbaikan bug, penambahan menu cetak BA kahar<br>
 versi 0.1 - versi awal, hanya bisa merekam dan cetak ulang BPS
 
 
 Todolist<br>
-<strike>cetak BA Keadaan kahar</strike><br>
-cetak register harian<br>
+<strike>cetak BA Keadaan kahar<br>
+cetak register harian</strike><br>
 ekspor csv untuk imacros<br>
 
 cara install :<br>
